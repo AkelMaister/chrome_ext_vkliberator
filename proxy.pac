@@ -32,9 +32,10 @@ function FindProxyForURL(url, host)
 			  "codeforces.com","st.codeforces.com"];
   
   for(var i = 0;i<blkDomains.length;i++) {
-		if(shExpMatch(host, '*'+blkDomains[i]+'*'))
+		if(shExpMatch(host, '*'+blkDomains[i]+'*')) {
 			return prxySrv;
 	  		console.log("find " + host)
+		}
 	}
 
 	return "DIRECT";
