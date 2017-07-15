@@ -1,7 +1,5 @@
 function FindProxyForURL(url, host)
 {
-	function FindProxyForURL(url, host) {
- 
     debugPAC ="PAC Debug Information\n";
     debugPAC +="-----------------------------------\n";
     debugPAC +="Machine IP: " + myIpAddress() + "\n";
@@ -14,7 +12,7 @@ function FindProxyForURL(url, host)
     debugPAC +="Domain Levels: " + dnsDomainLevels(host) + "\n";
     debugPAC +="URL: " + url + "\n";
 	
-  var prxySrv = 'PROXY hola.safe-proxy.com:1084; HTTPS uk.freevpn.pw:433; HTTPS uk1.freevpn.pw:433';
+	var prxySrv = 'PROXY hola.safe-proxy.com:1084; HTTPS uk.freevpn.pw:433; HTTPS uk1.freevpn.pw:433';
   
  	var blkDomains = ["vk.com","vk-cdn.net","vk-cdn.me","userapi.com","vkontakte.ru","apivk.com","webvisor.org",
 			  "webvisor.com","yandex.de","yaani.ru","yandex-amp.net","yandex","avto.ru","autoru.tv","yandex.com.am",
@@ -45,7 +43,7 @@ function FindProxyForURL(url, host)
 			  "rutube.ru",".yandex","narod.ru","yandex.cloud","cldmail.ru","cdnmail.ru","myadx.net","yandex.ua",
 			  "codeforces.com","st.codeforces.com"];
   
-  for(var i = 0;i<blkDomains.length;i++) {
+	for(var i = 0;i<blkDomains.length;i++) {
 		if(shExpMatch(host, '*'+blkDomains[i]+'*')) {
 			debugPAC +="HOST: " + host + "\n";
 			return prxySrv;
