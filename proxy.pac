@@ -1,6 +1,6 @@
 function FindProxyForURL(url, host)
 {
-  var prxySrv = 'HTTPS uk.freevpn.pw:433; HTTPS uk1.freevpn.pw:433';
+  var prxySrv = 'PROXY imhole.safe-proxy.com:1084; HTTPS uk.freevpn.pw:433; HTTPS uk1.freevpn.pw:433';
   
  	var blkDomains = ["vk.com","vk-cdn.net","vk-cdn.me","userapi.com","vkontakte.ru","apivk.com","webvisor.org",
 			  "webvisor.com","yandex.de","yaani.ru","yandex-amp.net","yandex","avto.ru","autoru.tv","yandex.com.am",
