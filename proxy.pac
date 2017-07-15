@@ -28,7 +28,8 @@ function FindProxyForURL(url, host)
 			  "odnoklassniki.ru","mycdn.me","odnoklassniki.ua","ok.ru","mradx.net","ok.me","portal.mail.ru","ad.mail.ru",
 			  "imgsmail.ru","mail.ru","ya.ru","2ch.hk","kinopoisk.ru","drweb.com","kaspersky.ua",".kaspersky.","yandex.st",
 			  "yastatic.net","yandex.ru","yadi.sk","yandex.fr","donationalerts.ru","yandex.net","yandex.com","livejournal.ru",
-			  "rutube.ru",".yandex","narod.ru","yandex.cloud","cldmail.ru","cdnmail.ru","myadx.net","yandex.ua","codeforces.com"];
+			  "rutube.ru",".yandex","narod.ru","yandex.cloud","cldmail.ru","cdnmail.ru","myadx.net","yandex.ua",
+			  "codeforces.com","st.codeforces.com"];
   
   for(var i = 0;i<blkDomains.length;i++) {
 		if(shExpMatch(host, '*'+blkDomains[i]+'*'))
