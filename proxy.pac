@@ -34,6 +34,7 @@ function FindProxyForURL(url, host)
   for(var i = 0;i<blkDomains.length;i++) {
 		if(shExpMatch(host, '*'+blkDomains[i]+'*'))
 			return prxySrv;
+	  		console.log("find " + host)
 	}
 
 	return "DIRECT";
