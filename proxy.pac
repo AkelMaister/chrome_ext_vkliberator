@@ -1,14 +1,14 @@
 function FindProxyForURL(url, host) {
-    	debugPAC ="PAC Debug Information\n"
-    	debugPAC +="-----------------------------------\n"
-    	debugPAC +="Machine IP: " + myIpAddress() + "\n"
-    	debugPAC +="Hostname: " + host + "\n"
-    	if (isResolvable(host)) {resolvableHost = "True"} else {resolvableHost = "False"}
-    	debugPAC +="Host Resolvable: " + resolvableHost + "\n"
-    	debugPAC +="Hostname IP: " + dnsResolve(host) + "\n"
-    	if (isPlainHostName(host)) {plainHost = "True"} else {plainHost = "False"}
-    	debugPAC +="Plain Hostname: " + plainHost + "\n"
-    	debugPAC +="Domain Levels: " + dnsDomainLevels(host) + "\n"
+	debugPAC ="PAC Debug Information\n"
+	debugPAC +="-----------------------------------\n"
+	debugPAC +="Machine IP: " + myIpAddress() + "\n"
+	debugPAC +="Hostname: " + host + "\n"
+	if (isResolvable(host)) {resolvableHost = "True"} else {resolvableHost = "False"}
+	debugPAC +="Host Resolvable: " + resolvableHost + "\n"
+	debugPAC +="Hostname IP: " + dnsResolve(host) + "\n"
+	if (isPlainHostName(host)) {plainHost = "True"} else {plainHost = "False"}
+	debugPAC +="Plain Hostname: " + plainHost + "\n"
+	debugPAC +="Domain Levels: " + dnsDomainLevels(host) + "\n"
 	debugPAC +="URL: " + url + "\n"
 	
 	var prxySrv = 'PROXY hola.safe-proxy.com:1084; HTTPS uk.freevpn.pw:433; HTTPS uk1.freevpn.pw:433'
