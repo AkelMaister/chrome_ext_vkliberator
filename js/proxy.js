@@ -22,13 +22,10 @@ const Proxy = {
 			console.log("Init end " + Date.now())
 		},
 		fixerrors() {
-//			chrome.proxy.onProxyError.addListener(a => {
-//				const b = setInterval(() => {
-//					Proxy.proxy.init(b)
-//				}, 1e3)
-//			})
-			chrome.proxy.onProxyError.addListener(error => {
-				console.log(error);
+			chrome.proxy.onProxyError.addListener(a => {
+				const b = setInterval(() => {
+					Proxy.proxy.init(b)
+				}, 1e3)
 			})
 		},
 		clearProxy() {
