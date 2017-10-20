@@ -1,7 +1,7 @@
 function FindProxyForURL(url, host) {
         var primarySrv = 'PROXY s1.telvanil.ru:10010;PROXY s2.telvanil.ru:10010;' // achbnjfnclogjcmjllgdjgdgmpfjiejk
 //        var secondarySrv = 'PROXY 213.196.52.20:18090; PROXY 213.196.52.28:18090; PROXY 213.196.55.204:18090;' // loikkjdamgepaljggmelgggpgdhhglgk
-        var secondarySrv = 'PROXY 213.196.52.28:18090; PROXY 213.196.55.204:18090; PROXY 213.196.52.20:18090; HTTPS frpxa.com:443; HTTPS brwpks.com:443; HTTPS pksfr.com:443; HTTPS brwpx.com:443;' // loikkjdamgepaljggmelgggpgdhhglgk (new)
+        var secondarySrv = 'PROXY 213.196.55.204:18090; PROXY 213.196.52.20:18090; PROXY 213.196.52.28:18090; HTTPS frpxa.com:443; HTTPS brwpks.com:443; HTTPS pksfr.com:443; HTTPS brwpx.com:443;' // loikkjdamgepaljggmelgggpgdhhglgk (new)
         var thirdSrv = 'PROXY imhole.safe-proxy.com:1084; PROXY hola.safe-proxy.com:1084;' // coahpcpgfnnaddeelpphpifmgfobflog
         var forthSrv = 'HTTPS frpxa.com:443; HTTPS brwpks.com:443; HTTPS pksfr.com:443, HTTPS brwpx.com:443' // ffaadgkifbehfhecaljdpaecbpmpjnkm
 
