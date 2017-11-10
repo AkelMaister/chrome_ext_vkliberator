@@ -5,7 +5,7 @@ function FindProxyForURL(url, host) {
         var thirdSrv = 'PROXY hola.safe-proxy.com:1084; PROXY imhole.safe-proxy.com:1084;'  // coahpcpgfnnaddeelpphpifmgfobflog
         var forthSrv = 'HTTPS frpxa.com:443; HTTPS brwpks.com:443; HTTPS pksfr.com:443, HTTPS brwpx.com:443' // ffaadgkifbehfhecaljdpaecbpmpjnkm
 
-        var proxyChain = secondarySrv + primarySrv + thirdSrv + forthSrv
+        var proxyChain = primarySrv + secondarySrv + thirdSrv + forthSrv
 
         var domains = ["2ch.hk","adfox.net","adfox.ru","ad.mail.ru","allods.com","allods.ru","allodsteam.ru","apivk.com","appsmail.ru",
                        "attachmail.ru","attachmy.com","autoi.ru","auto.ru","autoru.tv","avto.ru","beep.car","beepcar.ru","beepcarstatic.ru",
