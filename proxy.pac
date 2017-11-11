@@ -7,8 +7,14 @@ function FindProxyForURL(url, host) {
         var forthSrv = 'HTTPS frpxa.com:443; HTTPS brwpks.com:443; HTTPS pksfr.com:443, HTTPS brwpx.com:443' // ffaadgkifbehfhecaljdpaecbpmpjnkm
         var fifthSrv = 'HTTPS uk.freevpn.pw:443;'
 
-        var proxyChain = fifthSrv + primarySrv + secondarySrv + thirdSrv + forthSrv
-
+//      var proxyChain = fifthSrv + primarySrv + secondarySrv + thirdSrv + forthSrv
+        var proxyChain = secondarySrv
+        
+        var re = /\s*;\s*/;
+        var proxystring = proxyChain.substring(0, proxyChain.length - 1)
+        var proxyarr = proxystring.split(re)
+        var proxy = proxyarr[Math.floor(Math.random() * proxyarr.length)];
+        
         var domains = ["2ch.hk","adfox.net","adfox.ru","ad.mail.ru","allods.com","allods.ru","allodsteam.ru","apivk.com","appsmail.ru",
                        "attachmail.ru","attachmy.com","autoi.ru","auto.ru","autoru.tv","avto.ru","beep.car","beepcar.ru","beepcarstatic.ru",
                        "bem.info","bk.ru","cdnmail.ru","clck.ly","clck.ru","cldmail.ru","clickhouse.tech","clickhouse.yandex",
@@ -39,7 +45,7 @@ function FindProxyForURL(url, host) {
    
         for(var i = 0;i<domains.length;i++) {
                 if(shExpMatch(host, '*'+domains[i]+'*'))
-                        return proxyChain
+                        return proxy
         }
         return "DIRECT"
 }
