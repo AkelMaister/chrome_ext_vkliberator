@@ -56,7 +56,7 @@ applybutton.addEventListener('click', () => {
     applyParams()
 })
 
-getJSON('https://akelmaister.xyz/proxy.json', (err, data) => {
+getJSON('https://raw.githubusercontent.com/AkelMaister/chrome_ext_vkliberator/master/proxy.json', (err, data) => {
     if (err)
         console.error("We got error: " + err)
     
